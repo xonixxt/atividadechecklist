@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.raio {
+    color: #ff0000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ffffff;
+    background: #000000;
+    color: #ffffff;
+}
+
+input:focus, a:focus, button:focus {
+    outline: 4px solid #ffcc00;
+    outline-offset: 2px;
+}
+
+input:focus:invalid {
+    border-color: #ff4444;
+}
+
+.btn-rock {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-rock:hover {
+    background-color: #cccccc;
+}
+
+.video-wrapper {
+    background: #000;
+    border: 2px solid #333;
+}
+
+video {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .logo { font-size: 2rem; }
+}
