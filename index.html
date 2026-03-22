@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC/DC - Cadastro</title>
+    <title>AC/DC - Evento Oficial e Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,49 +12,59 @@
         <div class="logo">AC<span class="raio">&#9889;</span>DC</div>
         <nav aria-label="Navegação Principal">
             <ul>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#informacoes" class="nav-link">Informações</a></li>
                 <li><a href="#cadastro" class="nav-link">Cadastro</a></li>
-                <li><a href="#video" class="nav-link">Vídeo</a></li>
+                <li><a href="#video" class="nav-link">Mídia</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="sobre">
+            <h2>Sobre o Evento</h2>
+            <p>O AC/DC retorna com sua turnê mundial.</p>
+        </section>
+
+        <section id="informacoes">
+            <h2>Informações do Show</h2>
+            <ul>
+                <li><strong>Data:</strong> 22 de Março de 2026</li>
+                <li><strong>Local:</strong> Lugar X, Estado Y</li>
+                <li><strong>Horário:</strong> 20:00</li>
+            </ul>
+        </section>
+
         <section id="cadastro" aria-labelledby="form-title">
-            <h2 id="form-title">Cadastro de Fã</h2>
-            
+            <h2 id="form-title">Garanta sua Vaga (Cadastro)</h2>
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="nome">Nome Completo *</label>
-                    <input type="text" id="nome" name="nome" required aria-required="true" minlength="3" pattern="\S+.*">
+                    <input type="text" id="nome" name="nome" required minlength="3" pattern="\S+.*">
                 </div>
-
                 <div class="form-group">
                     <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
+                    <input type="email" id="email" name="email" required>
                 </div>
-
-                <button type="submit" class="btn-rock">Enviar</button>
+                <button type="submit" class="btn-rock">Enviar Inscrição</button>
             </form>
         </section>
 
         <section id="video" aria-labelledby="video-title">
             <h2 id="video-title">Material de Estudo</h2>
-            
             <div class="video-wrapper">
-                <video controls width="100%">
-    <source src="video.mp4" type="video/mp4">
-    <source src="video.webm" type="video/webm">
-    
-    <track label="Português" kind="subtitles" srclang="pt" src="legendas.vtt" default>
-    
-    <p>Seu navegador não suporta o vídeo. <a href="video.mp4">Baixe aqui</a>.</p>
-</video>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.webm" type="video/webm">
+                    <track label="Português" kind="subtitles" srclang="pt" src="legendas.vtt" default>
+                    <p>Seu navegador não suporta o vídeo. <a href="video.mp4">Baixe aqui</a>.</p>
+                </video>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>AC/DC Fan Club | Engenharia de Interfaces</p>
+        <p>&copy; 1973 AC/DC | Engenharia de Interfaces</p>
     </footer>
 
 </body>
